@@ -7,7 +7,7 @@ module.exports = function(grunt){
           dest: 'build/js/scripts.js',  
         },
         css: {
-          src: ['assets/css/normalize.css', 'assets/css/icons.css', 'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/bootstrap.min.css','assets/css/plugins/animate/animate.css','assets/css/style.css','assets/css/top-nav.css'],
+          src: ['assets/css/normalize.css', 'assets/css/icons.css', 'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/bootstrap.min.css','assets/css/plugins/animate/animate.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/print.css'],
           dest: 'build/css/styles.css',
         },
       },
