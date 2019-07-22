@@ -7,7 +7,7 @@ module.exports = function(grunt){
           dest: 'build/js/scripts.js',  
         },
         css: {
-          src: ['assets/css/fonts.css', 'assets/css/style.css', 'assets/css/slick.css'],
+          src: ['assets/css/normalize.css', 'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css'],
           dest: 'build/css/styles.css',
         },
       },
@@ -28,7 +28,19 @@ module.exports = function(grunt){
             'build/js/scripts.min.js': ['build/js/scripts.js']
           }
         }
+      },
+    // minify css configuration. - grunt cssmin
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'build/css',
+          src: ['styles.css', '!*.min.css'],
+          dest: 'build/css',
+          ext: '.min.css'
+        }]
       }
+    }
 //above this    
     });
     grunt.loadNpmTasks('grunt-contrib-cssmin');
