@@ -4654,3 +4654,124 @@ Version: 1.0.0
 .topbar-custom .menu-left {
     overflow: hidden
 }
+/*  
+Night Owl Admin Dashboard
+Author: Tim Green
+Description: Chat Styles
+Version: 1.0.0
+*/
+
+.chat {
+    margin: 0;
+    padding: 0;
+    margin-top: -15px;
+    margin-right: 10px
+}
+.chat li {
+    list-style: none;
+    padding: 7px 0 5px;
+    margin: 7px auto;
+    font-size: 14px;
+    float: left;
+    width: 100%
+}
+.chat li img.avatar {
+    height: 45px;
+    width: 45px;
+    float: left;
+    margin-top: 0;
+    border-radius: 50%!important
+}
+.chat li.in .message {
+    text-align: left;
+    margin-left: 65px
+}
+.nice-chat li.in .message {
+    background-color: rgba(108, 117, 125, .32);
+    border: 1px solid #333;
+    color: #707070;
+    border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+.chat li .message {
+    display: block;
+    padding: 5px;
+    position: relative
+}
+.chat li.out img.avatar {
+    float: right;
+    margin-left: 10px;
+    margin-top: 0
+}
+.chat li.out .message {
+    border-right: 2px solid rgba(104, 104, 104, .3);
+    margin-right: 65px;
+    text-align: right
+}
+.nice-chat li.out .message {
+    background-color: rgba(108, 117, 125, .2);
+    border: 1px solid #333;
+    color: #707070;
+    border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+.chat li.in .message .arrow {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent
+}
+.nice-chat li.in .message .arrow {
+    border-right: 8px solid #3a3c3f
+}
+.chat li.out .message .arrow {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #323436
+}
+/*  
+Night Owl Admin Dashboard
+Author: Tim Green
+Description: Print Styles
+Version: 1.0.0
+*/
+@media print {
+    .breadcrumb,
+    .footer,
+    .logo,
+    .page-title,
+    .page-title-box {
+        display: none;
+        margin: 0;
+        padding: 0
+    }
+    .left {
+        display: none
+    }
+    .content {
+        margin-top: 0;
+        padding-top: 0
+    }
+    .content-page,
+    .page-content-wrapper {
+        margin: 0!important
+    }
+    .footer,
+    .side-menu,
+    .topbar {
+        display: none;
+        margin: 0;
+        padding: 0
+    }
+    .content-page>.content {
+        margin: 0!important
+    }
+}
