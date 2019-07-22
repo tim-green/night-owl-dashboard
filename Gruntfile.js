@@ -7,9 +7,35 @@ module.exports = function(grunt){
           dest: 'build/js/scripts.js',  
         },
         css: {
-          src: ['assets/css/normalize.css', 'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css'],
+          src: ['assets/css/normalize.css', 'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/bootstrap.min.css','assets/css/plugins/animate/animate.css','assets/css/style.css'],
           dest: 'build/css/styles.css',
         },
+      },
+      watch: {
+      js: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
+      css: {
+        files: ['assets/css/*.css'],
+        tasks: ['concat'],
+      },
+      minjs: {
+        files: ['build/js/scripts.js'],
+        tasks: ['uglify'],
+      },
+      mincss: {
+        files: ['build/css/styles.css'],
+        tasks: ['cssmin'],
+      },
+    },
+    // minify js configuration. - grunt uglify
+      uglify: {
+        my_target: {
+          files: {
+            'build/js/scripts.min.js': ['build/js/scripts.js']
+          }
+        }
       },
     // minify css configuration. - grunt cssmin
     cssmin: {
@@ -22,38 +48,12 @@ module.exports = function(grunt){
           ext: '.min.css'
         }]
       }
-    },
-        // minify js configuration. - grunt uglify
-      uglify: {
-        my_target: {
-          files: {
-            'build/js/scripts.min.js': ['build/js/scripts.js']
-          }
-        }
-      },
-     watch: {
-      js: {
-        files: ['assets/js/*.js'],
-        tasks: ['concat'],
-      },
-      css: {
-        files: ['assets/css/*.css'],
-        tasks: ['concat'],
-      },
-      mincss: {
-        files: ['build/css/styles.css'],
-        tasks: ['cssmin'],
-      },
-      minjs: {
-        files: ['build/js/scripts.js'],
-        tasks: ['uglify'],
-      },
-    },
+    }
 //above this    
     });
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default',['concat','cssmin','uglify','watch']);
+    grunt.registerTask('default',['concat','uglify','cssmin', 'watch']);
 }
