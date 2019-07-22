@@ -1,0 +1,38 @@
+/*  
+Night Owl Admin Dashboard
+Author: Tim Green
+Description: Print Styles
+Version: 1.0.0
+*/
+@media print {
+    .breadcrumb,
+    .footer,
+    .logo,
+    .page-title,
+    .page-title-box {
+        display: none;
+        margin: 0;
+        padding: 0
+    }
+    .left {
+        display: none
+    }
+    .content {
+        margin-top: 0;
+        padding-top: 0
+    }
+    .content-page,
+    .page-content-wrapper {
+        margin: 0!important
+    }
+    .footer,
+    .side-menu,
+    .topbar {
+        display: none;
+        margin: 0;
+        padding: 0
+    }
+    .content-page>.content {
+        margin: 0!important
+    }
+}
