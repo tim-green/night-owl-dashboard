@@ -35,7 +35,7 @@ Version: 1.0.0
     line-height: 60px;
     float: left
 }
-#topnav .topbar-main .logo .logo-large {
+#topnav .topbar-main .logo .logo-small{
     position: absolute;
     top: 22px;
     height: 14px
