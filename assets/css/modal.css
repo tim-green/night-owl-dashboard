@@ -1,0 +1,44 @@
+/*  
+Night Owl Admin Dashboard
+Author: Tim Green
+Description: Modal Styles
+Version: 1.0.0
+*/
+
+.modal-content {
+    color: #8a8a8a
+}
+.modal-content .modal-title {
+    color: #333
+}
+.modal-body .form-control {
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid #d5dee7;
+    color: #333
+}
+.modal-body .form-control:focus {
+    background-color: #fff;
+    border-color: #93aac3;
+    color: #333;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.modal-body::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, .5)!important
+}
+.modal-body:-ms-input-placeholder {
+    color: rgba(0, 0, 0, .5)!important
+}
+.modal-body::-ms-input-placeholder {
+    color: rgba(0, 0, 0, .5)!important
+}
+.modal-body::placeholder {
+    color: rgba(0, 0, 0, .5)!important
+}
+.modal-body:-ms-input-placeholder {
+    color: rgba(0, 0, 0, .4)!important
+}
+.modal-body::-ms-input-placeholder {
+    color: rgba(0, 0, 0, .4)!important
+}
