@@ -1,0 +1,380 @@
+/*  
+Night Owl Admin Dashboard
+Author: Tim Green
+Description: Responsive Styles
+Version: 1.0.0
+*/
+
+@media only screen and (min-width: 1170px) {
+    #cd-timeline {
+        margin-bottom: 3em;
+        margin-top: 3em
+    }
+    #cd-timeline::before {
+        left: 50%;
+        margin-left: -2px
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-timeline-block {
+        margin: 4em 0
+    }
+    .cd-timeline-block:first-child {
+        margin-top: 0
+    }
+    .cd-timeline-block:last-child {
+        margin-bottom: 0
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-timeline-img {
+        width: 40px;
+        height: 40px;
+        line-height: 30px;
+        left: 50%;
+        margin-left: -20px;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden
+    }
+    .cssanimations .cd-timeline-img.is-hidden {
+        visibility: hidden
+    }
+    .cssanimations .cd-timeline-img.bounce-in {
+        visibility: visible;
+        -webkit-animation: cd-bounce-1 .6s;
+        animation: cd-bounce-1 .6s
+    }
+}
+@media only screen and (min-width: 1170px) {
+    .cd-timeline-content {
+        margin-left: 0;
+        padding: 1.6em;
+        width: 45%
+    }
+    .cd-timeline-content::before {
+        top: 24px;
+        left: 100%;
+        border-color: transparent;
+        border-left-color: #eff3f6
+    }
+    .cd-timeline-content .cd-read-more {
+        float: left
+    }
+    .cd-timeline-content .cd-date {
+        position: absolute;
+        width: 100%;
+        left: 122%;
+        top: 20px
+    }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content {
+        float: right
+    }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent;
+        border-right-color: #eff3f6
+    }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+        float: right
+    }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+        left: auto;
+        right: 122%;
+        text-align: right
+    }
+    .cssanimations .cd-timeline-content.is-hidden {
+        visibility: hidden
+    }
+    .cssanimations .cd-timeline-content.bounce-in {
+        visibility: visible;
+        -webkit-animation: cd-bounce-2 .6s;
+        animation: cd-bounce-2 .6s
+    }
+}
+@media only screen and (min-width: 1170px) {
+    .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+        -webkit-animation: cd-bounce-2-inverse .6s;
+        animation: cd-bounce-2-inverse .6s
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-timeline .year {
+        right: 29%
+    }
+    .main-timeline .timeline:nth-child(2n) .year {
+        left: 31%
+    }
+    .main-timeline {
+        width: 100%;
+        margin: 0
+    }
+}
+@media only screen and (max-width: 990px) {
+    .main-timeline {
+        width: 100%;
+        margin: 0
+    }
+    .main-timeline .year {
+        right: 28%
+    }
+    .main-timeline .timeline:nth-child(2n) .year {
+        left: 28%
+    }
+}
+@media only screen and (max-width: 767px) {
+    .main-timeline {
+        width: 100%;
+        margin: 0
+    }
+    .main-timeline:before {
+        left: 10px
+    }
+    .main-timeline .timeline {
+        padding: 0 0 0 30px;
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .main-timeline .timeline:first-child:before,
+    .main-timeline .timeline:last-child:before {
+        display: none
+    }
+    .main-timeline .timeline-icon {
+        margin: 0;
+        position: absolute;
+        top: 7px;
+        left: 0
+    }
+    .main-timeline .timeline:nth-child(2n) .year,
+    .main-timeline .year {
+        display: block;
+        font-weight: 700;
+        margin: 0 0 32px 30px;
+        z-index: 1;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        -webkit-transform: none;
+        transform: none
+    }
+    .main-timeline .timeline:nth-child(2n) .year:before {
+        border-left: none;
+        border-right: 18px solid rgba(104, 104, 104, .3);
+        right: auto;
+        left: -18px
+    }
+    .main-timeline .timeline-content {
+        padding: 20px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: auto;
+        float: none;
+        margin: 0 0 0 30px
+    }
+    .main-timeline .timeline-content:after,
+    .main-timeline .timeline:nth-child(2n) .timeline-content:after {
+        border: none;
+        border-bottom: 20px solid rgba(104, 104, 104, .3);
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        top: -20px;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+}
+@media only screen and (max-width: 480px) {
+    .main-timeline {
+        width: 100%;
+        margin: 0
+    }
+    .main-timeline .title {
+        float: none;
+        margin: 0
+    }
+    .main-timeline .timeline:nth-child(2n) .year,
+    .main-timeline .year {
+        margin-left: 20px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        margin-left: 10px
+    }
+    .main-timeline .post {
+        margin: 5px 0
+    }
+}
+@media (max-width: 1024px) {
+    .m-todo,
+    .mo-b-30 {
+        margin-bottom: 30px
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        overflow-x: hidden
+    }
+}
+@media (max-width: 768px) {
+    .side-menu.left {
+        margin-left: -100%
+    }
+    .content-page {
+        margin-left: 0
+    }
+    .enlarged .side-menu.left {
+        margin-left: 0!important
+    }
+    .button-menu-mobile {
+        display: inline-block;
+        top: 0
+    }
+    .navbar-custom {
+        padding-left: 10px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 30
+    }
+    .content-page>.content {
+        padding: 20px
+    }
+    #wrapper.enlarged .footer,
+    .footer {
+        left: 0
+    }
+    #wrapper.enlarged .left.side-menu {
+        -webkit-box-shadow: 0 0 3px rgba(64, 64, 64, .15);
+        box-shadow: 0 0 3px rgba(64, 64, 64, .15);
+        z-index: 1003
+    }
+    .page-content-wrapper {
+        margin: 0 -10px
+    }
+    .m-todo {
+        margin-bottom: 30px
+    }
+    .navbar-custom {
+        z-index: 1002
+    }
+    .page-title-box {
+        margin-top: 50px
+    }
+    .app-search {
+        margin-left: 50px
+    }
+}
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden
+    }
+    .content-page {
+        margin-left: 0!important
+    }
+    .enlarged .left.side-menu {
+        margin-left: -75px
+    }
+    .mobile-sidebar {
+        left: 0
+    }
+    .mobile-content {
+        left: 250px;
+        right: -250px
+    }
+    .wrapper-page {
+        width: 90%
+    }
+    .asColorPicker-wrap {
+        margin-bottom: 10px
+    }
+    .navbar-nav .open .dropdown-menu {
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+        left: auto;
+        position: absolute;
+        right: 0
+    }
+    .fc-toolbar .fc-right {
+        float: left;
+        margin: 10px 0
+    }
+    .app-search a {
+        left: 180px;
+        margin-left: -20px
+    }
+    .page-title-box button {
+        display: none
+    }
+    .main-income .income-data {
+        position: relative;
+        z-index: 10
+    }
+    .m-todo,
+    .mo-margin {
+        margin-bottom: 30px
+    }
+}
+@media (max-width: 620px) {
+    .page-header-title {
+        text-align: center
+    }
+    .dataTables_paginate .page-link {
+        padding: .35rem .5rem
+    }
+    .mo-mb-2 {
+        margin-bottom: 10px
+    }
+    .mo-mt-2 {
+        margin-top: 10px!important
+    }
+    .pagination-lg .page-link {
+        padding: .25rem .5rem;
+        font-size: 15px
+    }
+    .page-title-box {
+        margin-top: 0
+    }
+}
+@media (max-width: 480px) {
+    .side-menu {
+        z-index: 1003
+    }
+    .button-menu-mobile {
+        display: block;
+        top: 15px
+    }
+    .button-menu-mobile-topbar {
+        top: 0
+    }
+    .page-title {
+        display: none
+    }
+    .app-search {
+        display: none
+    }
+    .page-content-wrapper {
+        margin: 30px -10px 0
+    }
+}
+@media (max-width: 420px) {
+    .hide-phone,
+    .notify-icon {
+        display: none
+    }
+    .dropdown-menu-lg {
+        width: 200px
+    }
+    .notify-details {
+        margin-left: 0!important
+    }
+}
