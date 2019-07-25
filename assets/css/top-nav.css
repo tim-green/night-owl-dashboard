@@ -31,16 +31,23 @@ Version: 1.0.0
 #topnav .topbar-main {
     background-color: #2b3a4a
 }
-#topnav .topbar-main .logo {
+#topnav .logo {
     line-height: 60px;
     float: left
 }
-#topnav .topbar-main .logo .logo-small{
+
+.branding-logo{
+    width: 50%;
+}
+
+#topnav .topbar-main .logo .logo-small,
+#topnav .topbar-main .logo .branding-logo svg{
     position: absolute;
     top: 22px;
     height: 14px
 }
-#topnav .topbar-main .logo-small {
+#topnav .topbar-main .logo-small,
+#topnav .topbar-main .branding-logo {
     display: none;
     height: 40px
 }
