@@ -6,13 +6,22 @@ module.exports = function(grunt){
           src: ['assets/js/modernizr.min.js','assets/js/detect.js','assets/js/fastclick.js','assets/js/jquery.slimscroll.js','assets/js/jquery.blockUI.js','assets/js/waves.js','assets/js/jquery.nicescroll.js','assets/js/jquery.scrollTo.min.js','assets/js/plugins/metro/metroJS.min.js','assets/js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js','assets/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js','assets/js/plugins/sparkline-chart/jquery.sparkline.min.js','assets/js/plugins/morris/morris.min.js','assets/js/plugins/raphael/raphael.min.js','assets/js/svg-change-colour.js','assets/js/dashboard.js'],
           dest: 'build/js/scripts.js',  
         },
+        //calendar js
+        caljs: {
+          src: ['assets/js/plugins/jquery-ui/jquery-ui.min.js','assets/js/moment.js','assets/js/plugins/fullcalendar/fullcalendar.min.js', 'assets/js/calendar-init.js'],
+          dest: 'build/js/calendar-combined.js',  
+        },
         css: {
-          src: ['assets/css/normalize.css', 'assets/css/icons.css', 'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/bootstrap.min.css','assets/css/plugins/animate/animate.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
+          src: ['assets/css/normalize.css', 'assets/css/icons.css', 'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css', 'assets/css/print.css'],
           dest: 'build/css/styles.css',
         },
       },
       watch: {
       js: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
+      caljs: {
         files: ['assets/js/*.js'],
         tasks: ['concat'],
       },
@@ -33,7 +42,8 @@ module.exports = function(grunt){
       uglify: {
         minifyscripts: {
           files: {
-            'build/js/scripts.min.js': ['build/js/scripts.js']
+            'build/js/scripts.min.js': ['build/js/scripts.js'],
+            'build/js/calendar-combined.min.js': ['build/js/calendar-combined.js'],
           }
         }
       },
