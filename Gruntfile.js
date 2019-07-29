@@ -11,6 +11,11 @@ module.exports = function(grunt){
           src: ['assets/js/plugins/jquery-ui/jquery-ui.min.js','assets/js/moment.js','assets/js/plugins/fullcalendar/fullcalendar.min.js', 'assets/js/calendar-init.js'],
           dest: 'build/js/calendar-combined.js',  
         },
+         //Ranger Slider js
+        powerange: {
+          src: ['assets/js/plugins/powerange/powerange.js', 'assets/js/rangerslider-init.js'],
+          dest: 'build/js/powerange-combined.js',  
+        },
         //nightOwl App js
         nightOwlApp: {
           src: ['assets/js/nightowl-app.js'],
@@ -27,6 +32,10 @@ module.exports = function(grunt){
         tasks: ['concat'],
       },
       caljs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
+      powerange: {
         files: ['assets/js/*.js'],
         tasks: ['concat'],
       },
@@ -54,6 +63,7 @@ module.exports = function(grunt){
             'build/js/scripts.min.js': ['build/js/scripts.js'],
             'build/js/calendar-combined.min.js': ['build/js/calendar-combined.js'],
             'build/js/nightowl-app.min.js': ['build/js/nightowl-app.js'],
+            'build/js/powerange-combined.min.js': ['build/js/powerange-combined.js'],
           }
         }
       },
