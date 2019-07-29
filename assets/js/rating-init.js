@@ -31,7 +31,7 @@ $(function() {
         $(this).next(".badge").text($(this).val())
     });
     $("#element").emotionsRating({
-        emotionSize: 36,
+        emotionSize: 32,
         bgEmotion: "happy",
         emotions: ["angry", "disappointed", "meh", "happy", "inLove"],
         color: "gold"
