@@ -11,6 +11,11 @@ module.exports = function(grunt){
           src: ['assets/js/plugins/jquery-ui/jquery-ui.min.js','assets/js/moment.js','assets/js/plugins/fullcalendar/fullcalendar.min.js', 'assets/js/calendar-init.js'],
           dest: 'build/js/calendar-combined.js',  
         },
+        //nightOwl App js
+        nightOwlApp: {
+          src: ['assets/js/nightowl-app.js'],
+          dest: 'build/js/nightowl-app.js',  
+        },
         css: {
           src: ['assets/css/normalize.css', 'assets/css/icons.css', 'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css', 'assets/css/print.css'],
           dest: 'build/css/styles.css',
@@ -22,6 +27,10 @@ module.exports = function(grunt){
         tasks: ['concat'],
       },
       caljs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
+      nightOwlApp: {
         files: ['assets/js/*.js'],
         tasks: ['concat'],
       },
@@ -44,6 +53,7 @@ module.exports = function(grunt){
           files: {
             'build/js/scripts.min.js': ['build/js/scripts.js'],
             'build/js/calendar-combined.min.js': ['build/js/calendar-combined.js'],
+            'build/js/nightowl-app.min.js': ['build/js/nightowl-app.js'],
           }
         }
       },
