@@ -197,6 +197,10 @@ a.text-primary:focus,a.text-primary:hover {
 .range-quantity {
     background-color: #59ceb5
 }
+.current-quantity{
+    display: none;
+}
+
 .slider-wrapper {
     margin: 0 25px 12px;
     position: relative;
