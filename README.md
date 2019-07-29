@@ -24,10 +24,10 @@ https://picsum.photos
   - ~~UI Grid~~
   - ~~UI Modals~~
   - ~~UI Nav~~
-  - UI Pagination
-  - UI Progress Bars
-  - UI Pop Overs & Tooltips
-  - UI Range Slider
+  - ~~UI Pagination~~
+  - ~~UI Progress Bars~~
+  - ~~UI Pop Overs & Tooltips~~
+  - ~~UI Range Slider~~
   - UI Rating
   - UI Tabs & Accordions
   - UI Typography
