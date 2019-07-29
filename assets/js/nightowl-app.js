@@ -21,7 +21,7 @@ var nightOwlApp = function() {
                 height: "230px",
                 position: "right",
                 size: "6px",
-                color: "#59ceb5",
+                color: "#98a6ad",
                 wheelStep: 10
             }), u.on("click", function(e) {
                 return $(this).toggleClass("open"), $("#navigation").slideToggle(400), !1
