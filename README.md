@@ -28,10 +28,10 @@ https://picsum.photos
   - ~~UI Progress Bars~~
   - ~~UI Pop Overs & Tooltips~~
   - ~~UI Range Slider~~
-  - UI Rating
-  - UI Tabs & Accordions
-  - UI Typography
-  - UI Sweet Alerts
+  - UI Rating - currently having a small issue, but wanting to move on so this project won't get stale at all
+  - ~~UI Tabs & Accordions~~
+  - ~~UI Typography~~
+  - ~~UI Sweet Alerts~~
 - Components
   - Forms
     - Form Elements
