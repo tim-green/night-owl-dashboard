@@ -500,4 +500,4 @@ $(function() {
         emotions: ["angry", "disappointed", "meh", "happy", "inLove"],
         color: "gold"
     })
-});
+}); 
