@@ -26,8 +26,13 @@ module.exports = function(grunt){
           src: ['assets/js/plugins/bootstrap-rating/bootstrap-rating.js','assets/js/plugins/emotion-rating/emotion-ratings.js','assets/js/rating-init.js'],
           dest: 'build/js/rating-combined.js',  
         },
+        //sweet alert js
+        sweetalertjs: {
+          src: ['assets/js/plugins/sweet-alert/sweetalert.min.js','assets/js/plugins/sweet-alert/sweetalert-init.js'],
+          dest: 'build/js/sweetalert-combined.js',  
+        },
         css: {
-          src: ['assets/css/normalize.css', 'assets/css/icons.css', 'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css', 'assets/css/print.css'],
+          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css', 'assets/css/print.css'],
           dest: 'build/css/styles.css',
         },
       },
@@ -49,6 +54,10 @@ module.exports = function(grunt){
         tasks: ['concat'],
       },
       ratingjs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
+      sweetalertjs: {
         files: ['assets/js/*.js'],
         tasks: ['concat'],
       },
@@ -74,6 +83,7 @@ module.exports = function(grunt){
             'build/js/nightowl-app.min.js': ['build/js/nightowl-app.js'],
             'build/js/powerange-combined.min.js': ['build/js/powerange-combined.js'],
             'build/js/rating-combined.min.js': ['build/js/rating-combined.js'],
+            'build/js/sweetalert-combined.min.js': ['build/js/sweetalert-combined.js'],
           }
         }
       },
@@ -95,5 +105,5 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default',['concat','uglify','cssmin', 'watch']);
+    grunt.registerTask('default',['concat','uglify','cssmin']); //, 'watch'
 }
