@@ -136,7 +136,7 @@
                     <ul class="navigation-menu">
                         <li class="has-submenu"><a href="index.html"><i class="mdi mdi-airplay"></i>Dashboard</a></li>
                         <li class="has-submenu"><a href="calendar.html"><i class="mdi mdi-calendar"></i>Calendar</a></li>
-                        <li class="has-submenu"><a href="#"><i class="mdi mdi-bullseye"></i>UI Elements</a>
+                        <li class="has-submenu active"><a href="#"><i class="mdi mdi-bullseye"></i>UI Elements</a>
                             <ul class="submenu megamenu">
                                 <li class="">
                                     <ul>
@@ -164,7 +164,7 @@
                                         <li><a href="ui-rating.html">Rating</a></li>
                                         <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
                                         <li><a href="ui-typography.html">Typography</a></li>
-                                        <li><a href="ui-sweet-alert.html">Sweet-Alert</a></li>
+                                        <li class="active"><a href="ui-sweet-alert.html">Sweet-Alert</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -257,7 +257,138 @@
 
     <!-- End Navigation Bar-->
      
-     <!--  -->
+    <div class="wrapper">
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="btn-group float-right">
+                            <ol class="breadcrumb hide-phone p-0 m-0">
+                                <li class="breadcrumb-item"><a href="#">Night Owl</a></li>
+                                <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
+                                <li class="breadcrumb-item active">Sweet Alert</li>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">Sweet Alert</h4></div>
+                </div>
+            </div>
+            <!-- end page title end breadcrumb -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card m-b-20">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Examples</h4>
+                            <p class="text-muted font-14">A beautiful, responsive, customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies.</p>
+                            <div class="row text-center">
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">A basic message</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="sa-basic">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">A title with a text under</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="sa-title">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">A success message!</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="sa-success">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">A message with custom Image Header</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="sa-image">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">Ajax request example</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="ajax-alert">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">Chaining modals (queue) example</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="chaining-alert">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">A message with auto close timer</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="sa-close">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">Custom HTML description and buttons</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="custom-html-alert">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">By passing a parameter, you can execute something else for "Cancel".</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="sa-params">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">A warning message, with a function attached to the "Confirm"-button...</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="sa-warning">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">A message with custom width, padding and background</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="custom-padding-width-alert">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-4 m-b-30">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <p class="text-muted">Dynamic queue example</p>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="dynamic-alert">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end wrapper -->
     <!-- Footer -->
     <footer class="footer">
         <div class="container-fluid">
@@ -276,7 +407,7 @@
 <!-- JS Files from CDN -->
 <script src="//cdn.jsdelivr.net/combine/npm/jquery@3.4.1,npm/popper.js@1.15.0,npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script><!-- JS File Hosted-->
 <script src="build/js/scripts.min.js" async></script>
-<script src="build/js/calendar-combined.min.js" async></script>
+<script src="build/js/sweetalert-combined.min.js" async></script>
 <!-- Font Awesome Pro from my Kit -->
 <script src="//kit.fontawesome.com/ceb2b8cd67.js"></script>
 </body>
