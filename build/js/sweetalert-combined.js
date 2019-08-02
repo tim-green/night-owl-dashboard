@@ -48,8 +48,8 @@
             swal({
                 title: "Sweet!",
                 text: "Modal with a custom image.",
-                imageUrl: "assets/images/logo.png",
-                imageHeight: 30,
+                imageUrl: "https://picsum.photos/150/150",
+                imageHeight: 100,
                 animation: !1
             })
         }), t("#sa-close").click(function() {
@@ -64,7 +64,7 @@
             swal({
                 title: "<i>HTML</i> <u>example</u>",
                 type: "info",
-                html: 'You can use <b>bold text</b>, <a href="//Mannatthemes.in/">links</a> and other HTML tags',
+                html: 'You can use <b>bold text</b>, <a href="//night-owl.timgreen.ws/">links</a> and other HTML tags',
                 showCloseButton: !0,
                 showCancelButton: !0,
                 confirmButtonClass: "btn btn-success",
