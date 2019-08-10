@@ -33,7 +33,7 @@ module.exports = function(grunt){
         },
         //form advanced js
         formadvancedjs: {
-          src: ['assets/js/plugins/timepicker/moment.js','assets/js/plugins/timepicker/tempusdominus-bootstrap-4.js','assets/js/plugins/timepicker/bootstrap-material-datetimepicker.js','assets/js/plugins/colorpicker/jquery-asColor.js','assets/js/plugins/colorpicker/jquery-asGradient.js','assets/js/plugins/colorpicker/jquery-asColorPicker.min.js','assets/js/plugins/select2/select2.min.js','assets/js/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js','assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js','assets/js/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js','assets/js/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js','assets/js/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js','assets/js/plugins/dropzone/dist/dropzone.js','assets/js/form-advanced.js',],
+          src: ['assets/js/plugins/timepicker/moment.js','assets/js/plugins/timepicker/tempusdominus-bootstrap-4.js','assets/js/plugins/timepicker/bootstrap-material-datetimepicker.js','assets/js/plugins/colorpicker/jquery-asColor.js','assets/js/plugins/colorpicker/jquery-asGradient.js','assets/js/plugins/colorpicker/jquery-asColorPicker.min.js','assets/js/plugins/select2/select2.min.js','assets/js/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js','assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js','assets/js/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js','assets/js/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js','assets/js/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js','assets/js/plugins/dropzone/dist/dropzone.js','assets/js/form-advanced.js'],
           dest: 'build/js/form-advanced-combined.js',  
         },
         css: {
@@ -111,7 +111,7 @@ module.exports = function(grunt){
         files: [{
           expand: true,
           cwd: 'build/css',
-          src: ['styles.css', '!*.min.css'],
+          src: ['styles.css','form-advanced.css', '!*.min.css'],
           dest: 'build/css',
           ext: '.min.css'
         }]
