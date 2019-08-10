@@ -33,8 +33,8 @@ https://picsum.photos
   - ~~UI Typography~~
   - ~~UI Sweet Alerts~~
 - Components
-  - Forms
-    - Form Elements
+  - ~~Forms~~
+    - ~~Form Elements~~
     - Form Advanced
     - Form Validation
     - Summernote
