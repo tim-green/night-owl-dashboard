@@ -31,9 +31,18 @@ module.exports = function(grunt){
           src: ['assets/js/plugins/sweet-alert/sweetalert.min.js','assets/js/plugins/sweet-alert/sweetalert-init.js'],
           dest: 'build/js/sweetalert-combined.js',  
         },
+        //form advanced js
+        formadvancedjs: {
+          src: ['assets/js/plugins/timepicker/moment.js','assets/js/plugins/timepicker/tempusdominus-bootstrap-4.js','assets/js/plugins/timepicker/bootstrap-material-datetimepicker.js','assets/js/plugins/colorpicker/jquery-asColor.js','assets/js/plugins/colorpicker/jquery-asGradient.js','assets/js/plugins/colorpicker/jquery-asColorPicker.min.js','assets/js/plugins/select2/select2.min.js','assets/js/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js','assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js','assets/js/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js','assets/js/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js','assets/js/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js','assets/js/plugins/dropzone/dist/dropzone.js','assets/js/form-advanced.js',],
+          dest: 'build/js/form-advanced-combined.js',  
+        },
         css: {
-          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css', 'assets/css/print.css'],
+          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
           dest: 'build/css/styles.css',
+        },
+        formadvancedcss:{
+          src:['assets/css/plugins/timepicker/tempusdominus-bootstrap-4.css','assets/css/plugins/timepicker/bootstrap-material-datetimepicker.css','assets/css/plugins/colorpicker/asColorPicker.min.css','assets/css/plugins/select2/select2.min.css','assets/css/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.css','assets/css/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css','assets/css/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css','assets/css/plugins/dropzone/dist/dropzone.css'],
+           dest: 'build/css/form-advanced.css',
         },
       },
       watch: {
@@ -61,7 +70,15 @@ module.exports = function(grunt){
         files: ['assets/js/*.js'],
         tasks: ['concat'],
       },
+      formadvancedjs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
       css: {
+        files: ['assets/css/*.css'],
+        tasks: ['concat'],
+      },
+      formadvancedcss: {
         files: ['assets/css/*.css'],
         tasks: ['concat'],
       },
@@ -84,6 +101,7 @@ module.exports = function(grunt){
             'build/js/powerange-combined.min.js': ['build/js/powerange-combined.js'],
             'build/js/rating-combined.min.js': ['build/js/rating-combined.js'],
             'build/js/sweetalert-combined.min.js': ['build/js/sweetalert-combined.js'],
+            'build/js/form-advanced-combined.min.js': ['build/js/form-advanced-combined.js'],
           }
         }
       },
