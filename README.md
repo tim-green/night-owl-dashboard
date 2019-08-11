@@ -35,9 +35,9 @@ https://picsum.photos
 - Components
   - ~~Forms~~
     - ~~Form Elements~~
-    - Form Advanced
-    - Form Validation
-    - Summernote
+    - ~~Form Advanced~~
+    - ~~Form Validation~~
+    - ~~Summernote~~
   - Charts
     - Charts Chartist
     - Morris Charts
@@ -73,5 +73,5 @@ https://picsum.photos
   - ~~404 Error Page~~
   - 500 Error Page
 
-Clean up and optimised complete Night Owl Dashboard after all pages created.
+Clean up and optimised complete Night Owl Dashboard after all pages created and fixed any small bugs as well.
 
