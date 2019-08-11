@@ -41,8 +41,13 @@ module.exports = function(grunt){
           src: ['assets/js/plugins/parsleyjs/parsley.min.js','assets/js/form-validation-init.js'],
           dest: 'build/js/form-validation-combined.js',  
         },
+        //summernote js
+        summernote: {
+          src: ['assets/js/plugins/summernote/summernote-bs4.js','assets/js/form-summernote-init.js'],
+          dest: 'build/js/summernote-combined.js',  
+        },
         css: {
-          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
+          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/plugins/summernotes/summernote-bs4.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
           dest: 'build/css/styles.css',
         },
         formadvancedcss:{
@@ -108,6 +113,7 @@ module.exports = function(grunt){
             'build/js/sweetalert-combined.min.js': ['build/js/sweetalert-combined.js'],
             'build/js/form-advanced-combined.min.js': ['build/js/form-advanced-combined.js'],
             'build/js/form-validation-combined.min.js': ['build/js/form-validation-combined.js'],
+            'build/js/summernote-combined.min.js': ['build/js/summernote-combined.js'],
           }
         }
       },
