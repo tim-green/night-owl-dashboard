@@ -960,7 +960,9 @@ pre[class*=language-] {
 }
 
 
-
+.mapb{
+    width: 100%;
+}
 .mapb,
 .mapb-panaroma {
     height: 300px;
