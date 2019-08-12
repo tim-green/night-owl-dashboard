@@ -56,10 +56,10 @@ https://picsum.photos
   - Maps
     - Mapbox
     - Vector Maps
-  - Email
-    - Inbox
-    - Compose Mail
-    - View Mail (Read)
+  - ~~Email~~
+    - ~~Inbox~~
+    - ~~Compose Mail~~
+    - ~~View Mail (Read)~~
 - Pages
   - Profile
   - Invoice
