@@ -8,12 +8,12 @@ module.exports = function(grunt){
         },
         //calendar js
         caljs: {
-          src: ['assets/js/plugins/jquery-ui/jquery-ui.min.js','assets/js/moment.js','assets/js/plugins/fullcalendar/fullcalendar.min.js', 'assets/js/calendar-init.js'],
+          src: ['assets/js/plugins/jquery-ui/jquery-ui.min.js','assets/js/moment.js','assets/js/plugins/fullcalendar/fullcalendar.min.js','assets/js/calendar-init.js'],
           dest: 'build/js/calendar-combined.js',  
         },
          //Ranger Slider js
         powerange: {
-          src: ['assets/js/plugins/powerange/powerange.js', 'assets/js/rangerslider-init.js'],
+          src: ['assets/js/plugins/powerange/powerange.js','assets/js/rangerslider-init.js'],
           dest: 'build/js/powerange-combined.js',  
         },
         //nightOwl App js
@@ -46,8 +46,13 @@ module.exports = function(grunt){
           src: ['assets/js/plugins/summernote/summernote-bs4.js','assets/js/form-summernote-init.js'],
           dest: 'build/js/summernote-combined.js',  
         },
+        //charts - chartist js
+        chartistjs: {
+          src: ['assets/js/plugins/chartist/chartist.min.js','assets/js/plugins/chartist/chartist.min.js'],
+          dest: 'build/js/chartist-combined.js',  
+        },
         css: {
-          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/plugins/summernotes/summernote-bs4.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
+          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/plugins/summernotes/summernote-bs4.css','assets/css/plugins/chartist/chartist.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
           dest: 'build/css/styles.css',
         },
         formadvancedcss:{
@@ -84,6 +89,10 @@ module.exports = function(grunt){
         files: ['assets/js/*.js'],
         tasks: ['concat'],
       },
+      chartistjs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
       css: {
         files: ['assets/css/*.css'],
         tasks: ['concat'],
@@ -114,6 +123,7 @@ module.exports = function(grunt){
             'build/js/form-advanced-combined.min.js': ['build/js/form-advanced-combined.js'],
             'build/js/form-validation-combined.min.js': ['build/js/form-validation-combined.js'],
             'build/js/summernote-combined.min.js': ['build/js/summernote-combined.js'],
+            'build/js/chartist-combined.min.js': ['build/js/chartist-combined.js'],
           }
         }
       },
