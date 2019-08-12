@@ -257,7 +257,122 @@
 
     <!-- End Navigation Bar-->
      
-     <!--  -->
+    <div class="wrapper">
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="btn-group float-right">
+                            <ol class="breadcrumb hide-phone p-0 m-0">
+                                <li class="breadcrumb-item"><a href="#">Night Owl</a></li>
+                                <li class="breadcrumb-item"><a href="#">Charts</a></li>
+                                <li class="breadcrumb-item active">Chartist Chart</li>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">Chartist Chart</h4></div>
+                </div>
+            </div>
+            <!-- end page title end breadcrumb -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Overlapping bars on mobile</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">This example makes use of label interpolation and the seriesBarDistance property that allows you to make bars overlap over each other.</p>
+                            <div id="overlapping-bars" class="ct-chart ct-golden-section"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Stacked bar chart</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">You can also set your bar chart to stack the series bars on top of each other easily by using the stackBars property in your configuration.</p>
+                            <div id="stacked-bar-chart" class="ct-chart ct-golden-section"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Advanced Smil Animations</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">Chartist provides a simple API to animate the elements on the Chart using SMIL.</p>
+                            <div id="smil-animations" class="ct-chart ct-golden-section"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Animating a Donut with Svg.animate</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">Although it'd be also possible to achieve this animation with CSS, with some minor suboptimal things, here's an example of how to animate donut charts using Chartist.Svg.animate and SMIL.</p>
+                            <div id="animating-donut" class="ct-chart ct-golden-section"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Simple pie chart</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">A very simple pie chart with label interpolation to show percentage instead of the actual data series value.</p>
+                            <div id="simple-pie" class="ct-chart ct-golden-section simple-pie-chart-chartist"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Simple line chart</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">An example of a simple line chart with three series. You can edit this example in real-time.</p>
+                            <div id="simple-line-chart" class="ct-chart ct-golden-section"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Line Scatter Diagram</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">This advanced example uses a line chart to draw a scatter diagram. The data object is created with a functional style random mechanism.</p>
+                            <div id="scatter-diagram" class="ct-chart ct-golden-section"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Line chart with area</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">This chart uses the showArea option to draw line, dots but also an area shape. Use the low option to specify a fixed lower bound that will make the area expand.</p>
+                            <div id="chart-with-area" class="ct-chart ct-golden-section"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end wrapper -->
     <!-- Footer -->
     <footer class="footer">
         <div class="container-fluid">
@@ -276,7 +391,8 @@
 <!-- JS Files from CDN -->
 <script src="//cdn.jsdelivr.net/combine/npm/jquery@3.4.1,npm/popper.js@1.15.0,npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script><!-- JS File Hosted-->
 <script src="build/js/scripts.min.js" async></script>
-<script src="build/js/calendar-combined.min.js" async></script>
+<script src="build/js/chartist-combined.js" async></script>
+<script src="assets/js/chartist-init.js">
 <!-- Font Awesome Pro from my Kit -->
 <script src="//kit.fontawesome.com/ceb2b8cd67.js"></script>
 </body>
