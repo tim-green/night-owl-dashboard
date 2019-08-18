@@ -106,7 +106,7 @@
                 name: "Bahrain"
             }, {
                 latLng: [.33, 6.73],
-                name: "SÃƒÂ£o TomÃƒÂ© and PrÃƒÂ­ncipe"
+                name: "São Tomé and Príncipe"
             }]
         }), a("#usa").vectorMap({
             map: "us_aea_en",
