@@ -35,6 +35,6 @@ var map = new mapboxgl.Map({
 var popup = new mapboxgl.Popup({
         closeOnClick: false
     })
-    .setLngLat([133.77,-25.27])
+    .setLngLat([-96, 37.8])
     .setHTML('<h3>Pop up with Mapbox</h3>')
     .addTo(map);
