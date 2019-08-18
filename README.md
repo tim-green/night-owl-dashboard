@@ -53,9 +53,9 @@ https://picsum.photos
   - Icons
     - FontAwesome
     - Material Icons
-  - Maps
-    - Mapbox
-    - Vector Maps
+  - ~~Maps~~
+    - ~~Mapbox~~
+    - ~~Vector Maps~~
   - ~~Email~~
     - ~~Inbox~~
     - ~~Compose Mail~~
