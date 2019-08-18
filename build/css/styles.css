@@ -5854,14 +5854,16 @@ pre[class*=language-] {
 }
 
 
-
-.gmaps,
-.gmaps-panaroma {
+.mapb{
+    width: 100%;
+}
+.mapb,
+.mapb-panaroma {
     height: 300px;
     background: #eff3f6;
     border-radius: 3px
 }
-.gmaps-overlay {
+.mapb-overlay {
     display: block;
     text-align: center;
     color: #fff;
@@ -5871,20 +5873,20 @@ pre[class*=language-] {
     border-radius: 4px;
     padding: 10px 20px
 }
-.gmaps-overlay_arrow {
+.mapb-overlay_arrow {
     left: 50%;
     margin-left: -16px;
     width: 0;
     height: 0;
     position: absolute
 }
-.gmaps-overlay_arrow.above {
+.mapb-overlay_arrow.above {
     bottom: -15px;
     border-left: 16px solid transparent;
     border-right: 16px solid transparent;
     border-top: 16px solid #59ceb5
 }
-.gmaps-overlay_arrow.below {
+.mapb-overlay_arrow.below {
     top: -15px;
     border-left: 16px solid transparent;
     border-right: 16px solid transparent;
