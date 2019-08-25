@@ -59,10 +59,15 @@ module.exports = function(grunt){
         //datatable page js
         datatablejs: {
           src: ['assets/js/plugins/datatables/jquery.dataTables.min.js','assets/js/plugins/datatables/dataTables.bootstrap4.min.js','assets/js/plugins/datatables/dataTables.buttons.min.js','assets/js/plugins/datatables/buttons.bootstrap4.min.js','assets/js/plugins/datatables/jszip.min.js','assets/js/plugins/datatables/pdfmake.min.js','assets/js/plugins/datatables/vfs_fonts.js','assets/js/plugins/datatables/buttons.html5.min.js','assets/js/plugins/datatables/buttons.print.min.js','assets/js/plugins/datatables/buttons.colVis.min.js','assets/js/plugins/datatables/dataTables.responsive.min.js','assets/js/plugins/datatables/responsive.bootstrap4.min.js'],
-          dest: 'build/js/datatable-combined.js',  
+          dest: 'build/js/datatables-combined.js',  
+        },
+        //rwdtable js
+        rwdtablejs: {
+          src: ['assets/js/plugins/RWD-Table-Patterns/rwd-table.min.js','assets/js/rwdtable-init.js'],
+          dest: 'build/js/rwd-table.js',  
         },
         css: {
-          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/plugins/summernotes/summernote-bs4.css','assets/css/plugins/chartist/chartist.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
+          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/plugins/summernotes/summernote-bs4.css','assets/css/plugins/chartist/chartist.css','assets/css/plugins/RWD-Table-Patterns/rwd-table.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
           dest: 'build/css/styles.css',
         },
         formadvancedcss:{
@@ -71,7 +76,7 @@ module.exports = function(grunt){
         },
         datatablescss:{
           src:['assets/css/plugins/datatables/dataTables.bootstrap4.min.css','assets/css/plugins/datatables/buttons.bootstrap4.min.css','assets/css/plugins/datatables/responsive.bootstrap4.min.css'],
-           dest: 'build/css/datatable.css',
+           dest: 'build/css/datatables.css',
         },
       },
       watch: {
@@ -151,7 +156,8 @@ module.exports = function(grunt){
             'build/js/summernote-combined.min.js': ['build/js/summernote-combined.js'],
             'build/js/chartist-combined.min.js': ['build/js/chartist-combined.js'],
             'build/js/jvectormap-combined.min.js': ['build/js/jvectormap-combined.js'],
-            'build/js/datatable-combined.min.js': ['build/js/datatable-combined.js'],
+            'build/js/datatables-combined.min.js': ['build/js/datatables-combined.js'],
+            'build/js/rwd-table.min.js': ['build/js/rwd-table.js'],
           }
         }
       },
@@ -161,7 +167,7 @@ module.exports = function(grunt){
         files: [{
           expand: true,
           cwd: 'build/css',
-          src: ['styles.css','form-advanced.css','datatable.css', '!*.min.css'],
+          src: ['styles.css','form-advanced.css','datatables.css', '!*.min.css'],
           dest: 'build/css',
           ext: '.min.css'
         }]
