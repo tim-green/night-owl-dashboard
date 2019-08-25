@@ -49,7 +49,7 @@ https://picsum.photos
     - ~~Basic Table~~
     - ~~Data Table~~
     - ~~Responsive Table~~
-    - ~~Editable Table~~
+    - Editable Table
   - Icons
     - FontAwesome
     - Material Icons
