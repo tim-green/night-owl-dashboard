@@ -51,6 +51,16 @@ module.exports = function(grunt){
           src: ['assets/js/plugins/chartist/chartist.min.js','assets/js/plugins/chartist/chartist.min.js'],
           dest: 'build/js/chartist-combined.js',  
         },
+        //jvectormap - jvectormap js
+        jvectormap: {
+          src: ['assets/js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js','assets/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js','assets/js/plugins/jvectormap/gdp-data.js','assets/js/plugins/jvectormap/jquery-jvectormap-ca-lcc.js','assets/js/plugins/jvectormap/jquery-jvectormap-us-aea-en.js','assets/js/plugins/jvectormap/jquery-jvectormap-uk-mill-en.js','assets/js/plugins/jvectormap/jquery-jvectormap-us-il-chicago-mill-en.js','assets/js/jvectormap-init.js'],
+          dest: 'build/js/jvectormap-combined.js',  
+        },
+        //datatable page js
+        datatablejs: {
+          src: ['assets/js/plugins/datatables/jquery.dataTables.min.js','assets/js/plugins/datatables/dataTables.bootstrap4.min.js','assets/js/plugins/datatables/dataTables.buttons.min.js','assets/js/plugins/datatables/buttons.bootstrap4.min.js','assets/js/plugins/datatables/jszip.min.js','assets/js/plugins/datatables/pdfmake.min.js','assets/js/plugins/datatables/vfs_fonts.js','assets/js/plugins/datatables/buttons.html5.min.js','assets/js/plugins/datatables/buttons.print.min.js','assets/js/plugins/datatables/buttons.colVis.min.js','assets/js/plugins/datatables/dataTables.responsive.min.js','assets/js/plugins/datatables/responsive.bootstrap4.min.js'],
+          dest: 'build/js/datatable-combined.js',  
+        },
         css: {
           src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/plugins/summernotes/summernote-bs4.css','assets/css/plugins/chartist/chartist.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
           dest: 'build/css/styles.css',
@@ -58,6 +68,10 @@ module.exports = function(grunt){
         formadvancedcss:{
           src:['assets/css/plugins/timepicker/tempusdominus-bootstrap-4.css','assets/css/plugins/timepicker/bootstrap-material-datetimepicker.css','assets/css/plugins/colorpicker/asColorPicker.min.css','assets/css/plugins/select2/select2.min.css','assets/css/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.css','assets/css/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css','assets/css/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css','assets/css/plugins/dropzone/dist/dropzone.css'],
            dest: 'build/css/form-advanced.css',
+        },
+        datatablescss:{
+          src:['assets/css/plugins/datatables/dataTables.bootstrap4.min.css','assets/css/plugins/datatables/buttons.bootstrap4.min.css','assets/css/plugins/datatables/responsive.bootstrap4.min.css'],
+           dest: 'build/css/datatable.css',
         },
       },
       watch: {
@@ -93,11 +107,23 @@ module.exports = function(grunt){
         files: ['assets/js/*.js'],
         tasks: ['concat'],
       },
+      jvectormap: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
+      datatablejs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
       css: {
         files: ['assets/css/*.css'],
         tasks: ['concat'],
       },
       formadvancedcss: {
+        files: ['assets/css/*.css'],
+        tasks: ['concat'],
+      },
+      datatablecss: {
         files: ['assets/css/*.css'],
         tasks: ['concat'],
       },
@@ -124,6 +150,8 @@ module.exports = function(grunt){
             'build/js/form-validation-combined.min.js': ['build/js/form-validation-combined.js'],
             'build/js/summernote-combined.min.js': ['build/js/summernote-combined.js'],
             'build/js/chartist-combined.min.js': ['build/js/chartist-combined.js'],
+            'build/js/jvectormap-combined.min.js': ['build/js/jvectormap-combined.js'],
+            'build/js/datatable-combined.min.js': ['build/js/datatable-combined.js'],
           }
         }
       },
@@ -133,7 +161,7 @@ module.exports = function(grunt){
         files: [{
           expand: true,
           cwd: 'build/css',
-          src: ['styles.css','form-advanced.css', '!*.min.css'],
+          src: ['styles.css','form-advanced.css','datatable.css', '!*.min.css'],
           dest: 'build/css',
           ext: '.min.css'
         }]
