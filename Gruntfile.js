@@ -66,6 +66,11 @@ module.exports = function(grunt){
           src: ['assets/js/plugins/RWD-Table-Patterns/rwd-table.min.js','assets/js/rwdtable-init.js'],
           dest: 'build/js/rwd-table.js',  
         },
+        //edittablejs js
+        edittablejs: {
+          src: ['assets/js/plugins/tiny-editable/mindmup-editabletable.js','assets/js/plugins/tiny-editable/numeric-input-example.js','assets/js/plugins/tabledit/jquery.tabledit.js','assets/js/edit-table-init.js'],
+          dest: 'build/js/edittable-table.js',  
+        },
         css: {
           src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/plugins/summernotes/summernote-bs4.css','assets/css/plugins/chartist/chartist.css','assets/css/plugins/RWD-Table-Patterns/rwd-table.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
           dest: 'build/css/styles.css',
@@ -120,6 +125,10 @@ module.exports = function(grunt){
         files: ['assets/js/*.js'],
         tasks: ['concat'],
       },
+      edittablejs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
       css: {
         files: ['assets/css/*.css'],
         tasks: ['concat'],
@@ -158,6 +167,7 @@ module.exports = function(grunt){
             'build/js/jvectormap-combined.min.js': ['build/js/jvectormap-combined.js'],
             'build/js/datatables-combined.min.js': ['build/js/datatables-combined.js'],
             'build/js/rwd-table.min.js': ['build/js/rwd-table.js'],
+            'build/js/edittable-table.min.js': ['build/js/edittable-table.js'],
           }
         }
       },
