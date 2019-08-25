@@ -45,11 +45,11 @@ https://picsum.photos
     - C3 Charts
     - ChartJS Charts
     - jQuery Knob Charts
-  - Tables
-    - Basic Table
-    - Data Table
-    - Responsive Table
-    - Editable Table
+  - ~~Tables~~
+    - ~~Basic Table~~
+    - ~~Data Table~~
+    - ~~Responsive Table~~
+    - ~~Editable Table~~
   - Icons
     - FontAwesome
     - Material Icons
