@@ -60,7 +60,7 @@ https://picsum.photos
     - ~~Inbox~~
     - ~~Compose Mail~~
     - ~~View Mail (Read)~~
-- Pages
+- ~~Pages~~
   - ~~Profile~~
   - ~~Invoice~~
   - Timeline
