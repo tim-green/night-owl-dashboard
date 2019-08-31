@@ -50,9 +50,9 @@ https://picsum.photos
     - ~~Data Table~~
     - ~~Responsive Table~~
     - ~~Editable Table~~
-  - Icons
-    - FontAwesome
-    - Material Icons
+  - ~~Icons~~
+    - ~~FontAwesome~~
+    - ~~Material Icons~~
   - ~~Maps~~
     - ~~Mapbox~~
     - ~~Vector Maps~~
