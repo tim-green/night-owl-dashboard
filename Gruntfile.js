@@ -48,7 +48,7 @@ module.exports = function(grunt){
         },
         //charts - chartist js
         chartistjs: {
-          src: ['assets/js/plugins/chartist/chartist.min.js','assets/js/plugins/chartist/chartist.min.js'],
+          src: ['assets/js/plugins/chartist/chartist.min.js','assets/js/plugins/chartist/chartist-plugin-tooltip.min.js'],
           dest: 'build/js/chartist-combined.js',  
         },
         //jvectormap - jvectormap js
