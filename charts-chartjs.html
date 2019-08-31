@@ -257,7 +257,93 @@
 
     <!-- End Navigation Bar-->
      
-     <!--  -->
+    <div class="wrapper">
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="btn-group float-right">
+                            <ol class="breadcrumb hide-phone p-0 m-0">
+                                <li class="breadcrumb-item"><a href="#">Night OWL</a></li>
+                                <li class="breadcrumb-item"><a href="#">Charts</a></li>
+                                <li class="breadcrumb-item active">Chart JS</li>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">Chart JS</h4></div>
+                </div>
+            </div>
+            <!-- end page title end breadcrumb -->
+            <div class="row">
+                <div class="col-lg-12 col-xl-4">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Donut Chart</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">Pie and doughnut charts are probably the most commonly used chart there are. They are divided into segments, the arc of each segment shows the proportional value of each piece of data.</p>
+                            <canvas id="doughnut" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-12 col-xl-8">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Line Chart</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">A line chart is a way of plotting data points on a line. Often, it is used to show trend data, and the comparison of two data sets.</p>
+                            <canvas id="lineChart" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-12 col-xl-8">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Bar Chart</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">A bar chart is a way of showing data as bars. It is sometimes used to show trend data, and the comparison of multiple data sets side by side.</p>
+                            <canvas id="bar" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-12 col-xl-4">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Polar Chart</h4>
+                            <p class="text-muted m-b-30 font-14 d-inline-block text-truncate w-100">Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value.</p>
+                            <canvas id="polarArea" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-lg-12 col-xl-6">
+                    <div class="card mo-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Pie Chart</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">Pie and doughnut charts are probably the most commonly used chart there are. They are divided into segments, the arc of each segment shows the proportional value of each piece of data.</p>
+                            <canvas id="pie" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-12 col-xl-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Radar Chart</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">A radar chart is a way of showing multiple data points and the variation between them. They are often useful for comparing the points of two or more different data sets.</p>
+                            <canvas id="radar" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end wrapper -->
     <!-- Footer -->
     <footer class="footer">
         <div class="container-fluid">
@@ -276,7 +362,8 @@
 <!-- JS Files from CDN -->
 <script src="//cdn.jsdelivr.net/combine/npm/jquery@3.4.1,npm/popper.js@1.15.0,npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script><!-- JS File Hosted-->
 <script src="build/js/scripts.min.js" async></script>
-<script src="build/js/calendar-combined.min.js" async></script>
+<script src="build/js/chart-js-combined.min.js"></script>
+<script src="assets/js/chartjs-init.js"></script>
 <!-- Font Awesome Pro from my Kit -->
 <script src="//kit.fontawesome.com/ceb2b8cd67.js"></script>
 </body>
