@@ -71,8 +71,23 @@ module.exports = function(grunt){
           src: ['assets/js/plugins/tiny-editable/mindmup-editabletable.js','assets/js/plugins/tiny-editable/numeric-input-example.js','assets/js/plugins/tabledit/jquery.tabledit.js','assets/js/edit-table-init.js'],
           dest: 'build/js/edittable-table.js',  
         },
+        //flot chart js
+        flotjs: {
+          src: ['assets/js/plugins/flot-chart/jquery.flot.min.js','assets/js/plugins/flot-chart/','assets/js/plugins/flot-chart/jquery.flot.time.js','assets/js/plugins/flot-chart/jquery.flot.tooltip.min.js','assets/js/plugins/flot-chart/jquery.flot.resize.js','assets/js/plugins/flot-chart/jquery.flot.pie.js','assets/js/plugins/flot-chart/jquery.flot.selection.js','assets/js/plugins/flot-chart/jquery.flot.stack.js','assets/js/plugins/flot-chart/curvedLines.js','assets/js/plugins/flot-chart/jquery.flot.crosshair.js',],
+          dest: 'build/js/flot-chart-combined.js',  
+        },
+        //c3 chart js
+        cthreejs: {
+          src: ['assets/js/plugins/d3/d3.min.js','assets/js/plugins/c3/c3.min.js'],
+          dest: 'build/js/c3-chart-combined.js',  
+        },
+          //chart js
+        chartjs: {
+          src: ['assets/js/plugins/chart-js/chart.min.js'],
+          dest: 'build/js/chart-js-combined.js',  
+        },
         css: {
-          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css', 'assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/plugins/summernotes/summernote-bs4.css','assets/css/plugins/chartist/chartist.css','assets/css/plugins/RWD-Table-Patterns/rwd-table.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
+          src: ['assets/css/normalize.css', 'assets/css/icons.css','assets/css/plugins/sweet-alert/sweetalert.min.css' ,'assets/css/plugins/metro/MetroJS.min.css', 'assets/css/plugins/morris/morris.css','assets/css/plugins/c3/c3.min.css','assets/css/plugins/jvectormap/jquery-jvectormap-2.0.2.css','assets/css/plugins/waves/waves.min.css','assets/css/plugins/summernotes/summernote-bs4.css','assets/css/plugins/chartist/chartist.css','assets/css/plugins/RWD-Table-Patterns/rwd-table.min.css','assets/css/bootstrap.min.css','assets/css/plugins/fullcalendar/fullcalendar.min.css','assets/css/plugins/animate/animate.css','assets/css/plugins/powerange/powerange.css', 'assets/css/plugins/bootstrap-rating/bootstrap-rating.css','assets/css/style.css','assets/css/top-nav.css', 'assets/css/chat.css','assets/css/preloader.css', 'assets/css/utilities.css', 'assets/css/tables.css','assets/css/stars.css', 'assets/css/responsive.css', 'assets/css/modal.css','assets/css/print.css'],
           dest: 'build/css/styles.css',
         },
         formadvancedcss:{
@@ -129,6 +144,18 @@ module.exports = function(grunt){
         files: ['assets/js/*.js'],
         tasks: ['concat'],
       },
+      flotjs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
+      cthreejs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
+      chartjs: {
+        files: ['assets/js/*.js'],
+        tasks: ['concat'],
+      },
       css: {
         files: ['assets/css/*.css'],
         tasks: ['concat'],
@@ -168,6 +195,9 @@ module.exports = function(grunt){
             'build/js/datatables-combined.min.js': ['build/js/datatables-combined.js'],
             'build/js/rwd-table.min.js': ['build/js/rwd-table.js'],
             'build/js/edittable-table.min.js': ['build/js/edittable-table.js'],
+            'build/js/flot-chart-combined.min.js': ['build/js/flot-chart-combined.js'],
+            'build/js/c3-chart-combined.min.js': ['build/js/c3-chart-combined.js'],
+            'build/js/chart-js-combined.min.js': ['build/js/chart-js-combined.js'],
           }
         }
       },
