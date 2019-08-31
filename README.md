@@ -32,19 +32,19 @@ https://picsum.photos
   - ~~UI Tabs & Accordions~~
   - ~~UI Typography~~
   - ~~UI Sweet Alerts~~
-- Components
+- ~~Components~~
   - ~~Forms~~
     - ~~Form Elements~~
     - ~~Form Advanced~~
     - ~~Form Validation~~
     - ~~Summernote~~
-  - Charts
-    - Charts Chartist
-    - Morris Charts
-    - Flot Charts
-    - C3 Charts
-    - ChartJS Charts
-    - jQuery Knob Charts
+  - ~~Charts~~
+    - ~~Charts Chartist~~
+    - ~~Morris Charts~~
+    - ~~Flot Charts~~
+    - ~~C3 Charts~~
+    - ~~ChartJS Charts~~
+    - ~~jQuery Knob Charts~~
   - ~~Tables~~
     - ~~Basic Table~~
     - ~~Data Table~~
