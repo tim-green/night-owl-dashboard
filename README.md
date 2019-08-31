@@ -61,13 +61,13 @@ https://picsum.photos
     - ~~Compose Mail~~
     - ~~View Mail (Read)~~
 - Pages
-  - Profile
-  - Invoice
+  - ~~Profile~~
+  - ~~Invoice~~
   - Timeline
-  - Contact List
-  - Blank Page
-  - Lock Screen
-  - Login Page
+  - ~~Contact List~~
+  - ~~Blank Page~~
+  - ~~Lock Screen~~
+  - ~~Login Page~~
   - Recover Password
   - Register
   - ~~404 Error Page~~
