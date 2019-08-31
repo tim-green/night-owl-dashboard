@@ -221,15 +221,15 @@
             [4, 12],
             [5, 8],
             [6, 4]
-        ], ["Marketplace", "Other Market"], ["#59ceb5", "#365d6e"], "transparent", "transparent");
-        this.createPieGraph("#pie-chart #pie-chart-container", ["Marketplace", "Other Market", "Direct Sales"], [20, 30, 15], ["rgba(43, 58, 74, 1)", "rgba(65, 186, 194, 1)", "rgba(238, 240, 246, 1)"]);
+        ], ["Marketplace", "Other"], ["#59ceb5", "#365d6e"], "transparent", "transparent");
+        this.createPieGraph("#pie-chart #pie-chart-container", ["Marketplace", "Other", "Direct"], [20, 30, 15], ["rgba(43, 58, 74, 1)", "rgba(65, 186, 194, 1)", "rgba(238, 240, 246, 1)"]);
         var a = this.createRealTimeGraph("#flotRealTime", this.randomData(), ["#365d6e"]);
         a.draw();
         var e = this;
         ! function t() {
             a.setData([e.randomData()]), a.draw(), setTimeout(t, (s("html").hasClass("mobile-device"), 1e3))
         }();
-        this.createDonutGraph("#donut-chart #donut-chart-container", ["Marketplace", "Other Market", "Direct Sales"], [29, 20, 18], ["rgba(43, 58, 74, 1)", "rgba(65, 186, 194, 1)", "rgba(238, 240, 246, 1)"])
+        this.createDonutGraph("#donut-chart #donut-chart-container", ["Marketplace", "Other", "Direct"], [29, 20, 18], ["rgba(43, 58, 74, 1)", "rgba(65, 186, 194, 1)", "rgba(238, 240, 246, 1)"])
     }, s.FlotChart = new t, s.FlotChart.Constructor = t
 }(window.jQuery),
 function(t) {
