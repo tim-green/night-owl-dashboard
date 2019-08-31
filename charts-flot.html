@@ -257,7 +257,77 @@
 
     <!-- End Navigation Bar-->
      
-     <!--  -->
+     <div class="wrapper">
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="btn-group float-right">
+                            <ol class="breadcrumb hide-phone p-0 m-0">
+                                <li class="breadcrumb-item"><a href="#">Night Owl</a></li>
+                                <li class="breadcrumb-item"><a href="#">Charts</a></li>
+                                <li class="breadcrumb-item active">Flot Chart</li>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">Flot Chart</h4></div>
+                </div>
+            </div>
+            <!-- end page title end breadcrumb -->
+            <div class="row">
+                <div class="col-lg-12 col-xl-8">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Multiple Statistics</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">Stacked chart not only shows the trends over time, you can also see the cumulative sum of all data.</p>
+                            <div id="website-stats" class="flot-chart h-300"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-12 col-xl-4">
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Donut Pie</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">Pie chart is used to see the proprotion of each data groups, making Flot pie chart is pretty simple, in order to make pie chart you have to incldue jquery.flot.pie.js plugin.</p>
+                            <div id="donut-chart">
+                                <div id="donut-chart-container" class="flot-chart h-300"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-lg-12 col-xl-4">
+                    <div class="card mo-b-30">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Pie Chart</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">Pie chart is used to see the proprotion of each data groups, making Flot pie chart is pretty simple, in order to make pie chart you have to incldue jquery.flot.pie.js plugin.</p>
+                            <div id="pie-chart">
+                                <div id="pie-chart-container" class="flot-chart h-300"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-12 col-xl-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mt-0 header-title">Realtime Statistics</h4>
+                            <p class="text-muted font-14 d-inline-block text-truncate w-100">You can update a chart periodically to get a real-time effect by using a timer to insert the new data in the plot and redraw it.</p>
+                            <div id="flotRealTime" class="flot-chart h-300"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end wrapper -->
     <!-- Footer -->
     <footer class="footer">
         <div class="container-fluid">
@@ -276,7 +346,8 @@
 <!-- JS Files from CDN -->
 <script src="//cdn.jsdelivr.net/combine/npm/jquery@3.4.1,npm/popper.js@1.15.0,npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script><!-- JS File Hosted-->
 <script src="build/js/scripts.min.js" async></script>
-<script src="build/js/calendar-combined.min.js" async></script>
+<script src="build/js/flot-chart-combined.min.js"></script>
+<script src="assets/js/flot-init.js"></script>
 <!-- Font Awesome Pro from my Kit -->
 <script src="//kit.fontawesome.com/ceb2b8cd67.js"></script>
 </body>
