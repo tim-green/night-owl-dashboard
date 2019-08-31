@@ -28,26 +28,26 @@
                     ["Macbooks", 130, 120, 150, 140, 160, 150]
                 ],
                 types: {
-                    SonyVaio: "bar",
-                    iMacs: "bar",
+                    GoPros: "bar",
+                    iMac: "bar",
                     Tablets: "spline",
                     iPhones: "line",
                     Macbooks: "bar"
                 },
                 colors: {
-                    SonyVaio: "#365d6e",
+                    GoPros: "#365d6e",
                     iMacs: "#eef0f6",
                     Tablets: "#b9dfc6",
                     iPhones: "#e67a77",
                     Macbooks: "#59ceb5"
                 },
                 groups: [
-                    ["SonyVaio", "iMacs"]
+                    ["GoPros", "iMacs"]
                 ]
             },
             axis: {
                 x: {
-                    type: "categorized"
+                    type: "categorised"
                 }
             }
         }), c3.generate({
@@ -68,7 +68,7 @@
             axis: {
                 rotated: !0,
                 x: {
-                    type: "categorized"
+                    type: "categorised"
                 }
             }
         }), c3.generate({
