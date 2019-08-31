@@ -5228,6 +5228,9 @@ form {
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #59ceb5
 }
+.custom-control-label{
+    font-size: 12px
+}
 .error {
     color: red
 }
