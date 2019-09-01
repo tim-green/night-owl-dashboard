@@ -6227,7 +6227,7 @@ Version: 1.0.0
 #topnav .navbar-toggle span {
     height: 2px;
     width: 100%;
-    background-color: rgba(239, 243, 246, .8);
+    background-color: #59ceb5;
     display: block;
     margin-bottom: 5px;
     -webkit-transition: -webkit-transform .5s ease;
@@ -7912,9 +7912,9 @@ a.bg-primary:hover {
     color: #fff!important;
     background-color: #ea4c89
 }
-.btn-googleplus {
+.btn-discord {
     color: #fff!important;
-    background-color: #dd4b39
+    background-color: #7289DA
 }
 .btn-instagram {
     color: #fff!important;
