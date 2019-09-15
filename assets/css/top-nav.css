@@ -131,7 +131,6 @@ Version: 1.0.0
     top: 18px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color: rgba(239, 243, 246, .8)
 }
 #topnav .navbar-toggle.open span:nth-child(2) {
     visibility: hidden
