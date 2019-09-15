@@ -6212,7 +6212,7 @@ Version: 1.0.0
     background-color: transparent
 }
 #topnav .navbar-toggle:hover span {
-    background-color: rgba(239, 243, 246, .8)
+    background-color: #000;
 }
 #topnav .navbar-toggle .lines {
     width: 25px;
@@ -6242,7 +6242,6 @@ Version: 1.0.0
     top: 18px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color: rgba(239, 243, 246, .8)
 }
 #topnav .navbar-toggle.open span:nth-child(2) {
     visibility: hidden
@@ -7335,7 +7334,7 @@ label {
 #accordion .card-header h5 a::before,
 #accordion2 .card-header h5 a::before {
     content: '\f106';
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Pro";
     position: absolute;
     top: 12px;
     right: 25px;
@@ -8852,8 +8851,12 @@ Version: 1.0.0
         right: 0
     }
     .fc-toolbar .fc-right {
-        float: left;
-        margin: 10px 0
+        float: right;
+        margin: 0
+    }
+
+    .fc-toolbar h2{
+        margin-top:20px;
     }
     .app-search a {
         left: 180px;
@@ -8869,6 +8872,26 @@ Version: 1.0.0
     .m-todo,
     .mo-margin {
         margin-bottom: 30px
+    }
+    .display-box-label {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .display-box{
+        background:transparent;
+        border-radius: 5px;
+        font-size: .8em;
+        height: 23px;
+        line-height: 20px;
+        right: -25px;
+        padding-top: 0px;
+        position: relative;
+        text-align: center;
+        top: -26px;
+        width: 40px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
 }
 @media (max-width: 620px) {
