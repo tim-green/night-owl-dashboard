@@ -308,8 +308,12 @@ Version: 1.0.0
         right: 0
     }
     .fc-toolbar .fc-right {
-        float: left;
-        margin: 10px 0
+        float: right;
+        margin: 0
+    }
+
+    .fc-toolbar h2{
+        margin-top:20px;
     }
     .app-search a {
         left: 180px;
