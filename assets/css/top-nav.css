@@ -101,7 +101,7 @@ Version: 1.0.0
     background-color: transparent
 }
 #topnav .navbar-toggle:hover span {
-    background-color: rgba(239, 243, 246, .8)
+    background-color: #000;
 }
 #topnav .navbar-toggle .lines {
     width: 25px;
