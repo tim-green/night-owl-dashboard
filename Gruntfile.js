@@ -73,7 +73,7 @@ module.exports = function(grunt){
         },
         //flot chart js
         flotjs: {
-          src: ['assets/js/plugins/flot-chart/jquery.flot.min.js','assets/js/plugins/flot-chart/','assets/js/plugins/flot-chart/jquery.flot.time.js','assets/js/plugins/flot-chart/jquery.flot.tooltip.min.js','assets/js/plugins/flot-chart/jquery.flot.resize.js','assets/js/plugins/flot-chart/jquery.flot.pie.js','assets/js/plugins/flot-chart/jquery.flot.selection.js','assets/js/plugins/flot-chart/jquery.flot.stack.js','assets/js/plugins/flot-chart/curvedLines.js','assets/js/plugins/flot-chart/jquery.flot.crosshair.js',],
+          src: ['assets/js/plugins/flot-chart/jquery.flot.min.js','assets/js/plugins/flot-chart/','assets/js/plugins/flot-chart/jquery.flot.time.js','assets/js/plugins/flot-chart/jquery.flot.tooltip.min.js','assets/js/plugins/flot-chart/jquery.flot.resize.js','assets/js/plugins/flot-chart/jquery.flot.pie.js','assets/js/plugins/flot-chart/jquery.flot.selection.js','assets/js/plugins/flot-chart/jquery.flot.stack.js','assets/js/plugins/flot-chart/curvedLines.js','assets/js/plugins/flot-chart/jquery.flot.crosshair.js'],
           dest: 'build/js/flot-chart-combined.js',  
         },
         //c3 chart js
