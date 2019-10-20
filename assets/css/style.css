@@ -329,6 +329,10 @@ form {
 .custom-control-label{
     font-size: 12px
 }
+.custom-control-label::before{
+    top: 1.65rem;
+}
+
 .error {
     color: red
 }
