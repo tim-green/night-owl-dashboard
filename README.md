@@ -1,5 +1,5 @@
 # Night Owl - Admin Dashboard
-Admin dashboard built with bootstrap
+Night Owl is a Bootstrap 4 based fully responsive admin dashboard template. Night Owl been based on a simple and modular design, which allows it to be easily customised. Night Owl comes with lots of reusable and beautiful UI elements, widgets.
 
 ## Credits
 
