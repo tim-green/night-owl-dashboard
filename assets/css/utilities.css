@@ -124,6 +124,10 @@ Version: 1.0.0
     border: 0;
     font-size: 14px
 }
+.alert-dismissible{
+    padding-right: 2rem;
+}
+
 .alert i {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
