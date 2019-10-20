@@ -1,5 +1,5 @@
 # Night Owl - Admin Dashboard
-Admin dashboard built with bootstrap - Work In Progress
+Admin dashboard built with bootstrap
 
 ## Credits
 
@@ -63,7 +63,7 @@ https://picsum.photos
 - ~~Pages~~
   - ~~Profile~~
   - ~~Invoice~~
-  - Timeline
+  - ~~Timeline~~
   - ~~Contact List~~
   - ~~Blank Page~~
   - ~~Lock Screen~~
@@ -72,6 +72,4 @@ https://picsum.photos
   - ~~Register~~
   - ~~404 Error Page~~
   - ~~500 Error Page~~
-
-Clean up and optimised complete Night Owl Dashboard after all pages created and fixed any small bugs as well.
 
