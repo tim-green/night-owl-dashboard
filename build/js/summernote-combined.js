@@ -7772,6 +7772,6 @@ $(document).ready(function() {
         height: 300,
         minHeight: null,
         maxHeight: null,
-        focus: !0
+        focus: !0,
     })
 });
